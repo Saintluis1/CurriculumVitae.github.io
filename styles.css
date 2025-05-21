@@ -527,6 +527,38 @@ footer {
         padding: 5.5rem 0.5rem 2rem 0.5rem;
     }
 }
+@media (max-width: 600px) {
+  .container {
+    margin: 0;
+    padding: 1rem 0.5rem 2rem 0.5rem;
+  }
+  .profile-image img,
+  .profile-hero-img img {
+    width: 90px;
+    height: 90px;
+  }
+  .profile-hero-name {
+    font-size: 2rem;
+  }
+  .profile-hero-title {
+    font-size: 1.1rem;
+  }
+  .profile-hero-location {
+    font-size: 1rem;
+  }
+  section {
+    padding: 1rem;
+  }
+  .skills-grid {
+    grid-template-columns: 1fr;
+  }
+  .profile {
+    padding: 1rem;
+  }
+  .fixed-header {
+    padding: 1rem 0.5rem;
+  }
+}
 
 /* Rimuovo timeline e pallini */
 .timeline,
@@ -565,3 +597,12 @@ footer {
     color: #fff !important;
     box-shadow: none;
 } 
+
+html, body {
+  width: 100%;
+  overflow-x: hidden;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
