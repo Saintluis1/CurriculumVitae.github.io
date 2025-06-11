@@ -295,12 +295,18 @@ footer p {
 
 @media (max-width: 768px) {
     .container {
-        padding: 3.5rem 1.5rem 2rem 1.5rem;
-        transform: scale(0.85);
+        margin: 0;
+        padding: 6rem 0.5rem 2rem 0.5rem;
+        width: 100%;
     }
 
     .fixed-header {
-        padding: 0.8rem 1.5rem;
+        padding: 0.8rem 1rem;
+        width: 100%;
+    }
+
+    .profile-hero {
+        margin-top: 4rem;
     }
 
     .profile-hero-img img {
@@ -309,19 +315,42 @@ footer p {
     }
 
     .profile-hero-name {
-        font-size: 3rem;
+        font-size: 2.1rem;
     }
 
     .profile-hero-title {
-        font-size: 1.6rem;
+        font-size: 1.12rem;
     }
 
     .profile-hero-location {
-        font-size: 1.2rem;
+        font-size: 0.84rem;
     }
 
     .section-title {
-        font-size: 2rem;
+        font-size: 1.4rem;
+    }
+
+    section.experience,
+    section.skills,
+    section.education,
+    section.certifications,
+    section.soft-skills,
+    section.languages {
+        padding: 1.5rem;
+        margin: 0 0.5rem 1.5rem 0.5rem;
+        width: calc(100% - 1rem);
+    }
+
+    .timeline-item h3 {
+        font-size: 0.91rem;
+    }
+
+    .timeline-item h4 {
+        font-size: 0.77rem;
+    }
+
+    .timeline-item .date {
+        font-size: 0.7rem;
     }
 
     .profile {
@@ -366,22 +395,6 @@ footer p {
         padding: 0.6rem 1rem;
     }
 
-    section {
-        padding: 1.5rem;
-    }
-
-    h2 {
-        font-size: 1.5rem;
-    }
-
-    .timeline-item h3 {
-        font-size: 1.2rem;
-    }
-
-    .timeline-item h4 {
-        font-size: 1rem;
-    }
-
     .profile-hero-links {
         gap: 1.2rem;
     }
@@ -394,12 +407,11 @@ footer p {
 
 @media (max-width: 480px) {
     .container {
-        padding: 3rem 1rem 1.5rem 1rem;
-        transform: scale(0.75);
+        padding: 5rem 0.3rem 1.5rem 0.3rem;
     }
 
-    .fixed-header {
-        padding: 0.8rem 1rem;
+    .profile-hero {
+        margin-top: 3.5rem;
     }
 
     .profile-hero-img img {
@@ -408,19 +420,42 @@ footer p {
     }
 
     .profile-hero-name {
-        font-size: 2.5rem;
+        font-size: 1.75rem;
     }
 
     .profile-hero-title {
-        font-size: 1.4rem;
+        font-size: 0.98rem;
     }
 
     .profile-hero-location {
-        font-size: 1.1rem;
+        font-size: 0.77rem;
     }
 
     .section-title {
-        font-size: 1.8rem;
+        font-size: 1.26rem;
+    }
+
+    section.experience,
+    section.skills,
+    section.education,
+    section.certifications,
+    section.soft-skills,
+    section.languages {
+        padding: 1.2rem;
+        margin: 0 0.3rem 1.2rem 0.3rem;
+        width: calc(100% - 0.6rem);
+    }
+
+    .timeline-item h3 {
+        font-size: 0.91rem;
+    }
+
+    .timeline-item h4 {
+        font-size: 0.77rem;
+    }
+
+    .timeline-item .date {
+        font-size: 0.7rem;
     }
 
     .profile-hero-links {
