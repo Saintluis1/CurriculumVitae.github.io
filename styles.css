@@ -296,7 +296,7 @@ footer p {
 @media (max-width: 768px) {
     .container {
         margin: 0;
-        padding: 6rem 0.5rem 2rem 0.5rem;
+        padding: 7rem 0.5rem 2rem 0.5rem;
         width: 100%;
     }
 
@@ -306,7 +306,7 @@ footer p {
     }
 
     .profile-hero {
-        margin-top: 4rem;
+        margin-top: 5rem;
     }
 
     .profile-hero-img img {
@@ -315,19 +315,19 @@ footer p {
     }
 
     .profile-hero-name {
-        font-size: 2.1rem;
+        font-size: 1.95rem;
     }
 
     .profile-hero-title {
-        font-size: 1.12rem;
+        font-size: 1.04rem;
     }
 
     .profile-hero-location {
-        font-size: 0.84rem;
+        font-size: 0.78rem;
     }
 
     .section-title {
-        font-size: 1.4rem;
+        font-size: 1.3rem;
     }
 
     section.experience,
@@ -342,15 +342,15 @@ footer p {
     }
 
     .timeline-item h3 {
-        font-size: 0.91rem;
+        font-size: 0.845rem;
     }
 
     .timeline-item h4 {
-        font-size: 0.77rem;
+        font-size: 0.715rem;
     }
 
     .timeline-item .date {
-        font-size: 0.7rem;
+        font-size: 0.65rem;
     }
 
     .profile {
@@ -391,7 +391,7 @@ footer p {
 
     .skills-grid span,
     .language-skills span {
-        font-size: 1.1rem;
+        font-size: 0.845rem;
         padding: 0.6rem 1rem;
     }
 
@@ -407,11 +407,11 @@ footer p {
 
 @media (max-width: 480px) {
     .container {
-        padding: 5rem 0.3rem 1.5rem 0.3rem;
+        padding: 6.5rem 0.3rem 1.5rem 0.3rem;
     }
 
     .profile-hero {
-        margin-top: 3.5rem;
+        margin-top: 4.5rem;
     }
 
     .profile-hero-img img {
@@ -420,19 +420,19 @@ footer p {
     }
 
     .profile-hero-name {
-        font-size: 1.75rem;
+        font-size: 1.625rem;
     }
 
     .profile-hero-title {
-        font-size: 0.98rem;
+        font-size: 0.91rem;
     }
 
     .profile-hero-location {
-        font-size: 0.77rem;
+        font-size: 0.715rem;
     }
 
     .section-title {
-        font-size: 1.26rem;
+        font-size: 1.17rem;
     }
 
     section.experience,
@@ -447,15 +447,15 @@ footer p {
     }
 
     .timeline-item h3 {
-        font-size: 0.91rem;
+        font-size: 0.845rem;
     }
 
     .timeline-item h4 {
-        font-size: 0.77rem;
+        font-size: 0.715rem;
     }
 
     .timeline-item .date {
-        font-size: 0.7rem;
+        font-size: 0.65rem;
     }
 
     .profile-hero-links {
@@ -479,8 +479,12 @@ footer p {
 
     .skills-grid span,
     .language-skills span {
-        font-size: 1.1rem;
+        font-size: 0.845rem;
         padding: 0.8rem 1rem;
+    }
+
+    .certifications-list li {
+        font-size: 0.845rem;
     }
 
     footer {
