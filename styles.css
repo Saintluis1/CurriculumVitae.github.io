@@ -263,13 +263,49 @@ footer p {
 
 @media (max-width: 900px) {
     .container {
-        margin: 0 2rem;
-        padding: 5rem 2rem 2rem 2rem;
-        zoom: 0.9;
+        margin: 0;
+        padding: 4rem 2rem 2rem 2rem;
+        width: 100%;
+        transform: scale(0.9);
+        transform-origin: top center;
     }
 
     .fixed-header {
-        padding: 1.2rem 2rem;
+        padding: 1rem 2rem;
+        width: 100%;
+    }
+
+    .profile-hero-img img {
+        width: 200px;
+        height: 200px;
+    }
+
+    .profile-hero-name {
+        font-size: 3.5rem;
+    }
+
+    .profile-hero-title {
+        font-size: 1.8rem;
+    }
+
+    .profile-hero-location {
+        font-size: 1.4rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 3.5rem 1.5rem 2rem 1.5rem;
+        transform: scale(0.85);
+    }
+
+    .fixed-header {
+        padding: 0.8rem 1.5rem;
+    }
+
+    .profile-hero-img img {
+        width: 180px;
+        height: 180px;
     }
 
     .profile-hero-name {
@@ -277,50 +313,15 @@ footer p {
     }
 
     .profile-hero-title {
-        font-size: 1.5rem;
+        font-size: 1.6rem;
     }
 
     .profile-hero-location {
         font-size: 1.2rem;
     }
-}
-
-@media (max-width: 768px) {
-    .container {
-        margin: 0 1.5rem;
-        padding: 4.5rem 1.5rem 2rem 1.5rem;
-        zoom: 0.8;
-    }
-
-    .fixed-header {
-        padding: 1rem 1.5rem;
-    }
-
-    .profile-hero-name {
-        font-size: 2.5rem;
-    }
-
-    .profile-hero-title {
-        font-size: 1.3rem;
-    }
-
-    .profile-hero-location {
-        font-size: 1.1rem;
-    }
 
     .section-title {
-        font-size: 1.8rem;
-        margin: 2.5rem 0 1.2rem 0;
-    }
-
-    section.experience,
-    section.skills,
-    section.education,
-    section.certifications,
-    section.soft-skills,
-    section.languages {
-        padding: 1.5rem;
-        margin-bottom: 1.5rem;
+        font-size: 2rem;
     }
 
     .profile {
@@ -393,39 +394,37 @@ footer p {
 
 @media (max-width: 480px) {
     .container {
-        margin: 0 1rem;
-        padding: 4rem 1rem 2rem 1rem;
-        zoom: 0.7;
+        padding: 3rem 1rem 1.5rem 1rem;
+        transform: scale(0.75);
     }
 
     .fixed-header {
-        padding: 1rem;
-    }
-
-    .cv-title {
-        font-size: 1.5rem;
+        padding: 0.8rem 1rem;
     }
 
     .profile-hero-img img {
-        width: 120px;
-        height: 120px;
+        width: 150px;
+        height: 150px;
     }
 
     .profile-hero-name {
-        font-size: 2rem;
-        margin-top: 1rem;
+        font-size: 2.5rem;
     }
 
     .profile-hero-title {
-        font-size: 1.1rem;
+        font-size: 1.4rem;
     }
 
     .profile-hero-location {
-        font-size: 1rem;
-        margin-bottom: 1rem;
+        font-size: 1.1rem;
+    }
+
+    .section-title {
+        font-size: 1.8rem;
     }
 
     .profile-hero-links {
+        display: flex;
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: center;
@@ -435,33 +434,18 @@ footer p {
     .btn-linkedin, 
     .btn-email {
         padding: 0.8rem 1.5rem;
-    }
-
-    .section-title {
-        font-size: 1.5rem;
-        margin: 2rem 0 1rem 0;
-    }
-
-    .timeline-item h3 {
-        font-size: 1.2rem;
-    }
-
-    .timeline-item h4 {
         font-size: 1rem;
     }
 
-    .timeline-item .date {
-        font-size: 0.9rem;
-    }
-
     .skills-grid {
-        grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+        grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
         gap: 1rem;
     }
 
     .skills-grid span,
     .language-skills span {
-        padding: 0.8rem 1.2rem;
+        font-size: 1.1rem;
+        padding: 0.8rem 1rem;
     }
 
     footer {
@@ -472,9 +456,8 @@ footer p {
 
 @media (max-width: 360px) {
     .container {
-        margin: 0 0.8rem;
-        padding: 3.5rem 0.8rem 1.5rem 0.8rem;
-        zoom: 0.65;
+        padding: 2.5rem 0.8rem 1rem 0.8rem;
+        transform: scale(0.7);
     }
 
     .profile-hero-links {
@@ -485,7 +468,7 @@ footer p {
     .btn-linkedin, 
     .btn-email {
         width: 100%;
-        max-width: 280px;
+        max-width: 250px;
     }
 }
 
@@ -814,4 +797,22 @@ img {
     body {
         -webkit-text-size-adjust: none;
     }
+
+    .timeline-item h3 {
+        font-size: 1.3rem;
+    }
+
+    .timeline-item h4 {
+        font-size: 1.1rem;
+    }
+
+    .timeline-item .date {
+        font-size: 1rem;
+    }
+}
+
+/* Assicuriamoci che il contenuto non venga tagliato */
+.container {
+    min-height: 100vh;
+    position: relative;
 }
