@@ -262,10 +262,74 @@ footer p {
 }
 
 @media (max-width: 768px) {
+    .container {
+        margin: 0 1rem;
+        padding: 4rem 1rem 2rem 1rem;
+    }
+
     .profile {
         flex-direction: column;
-        align-items: center;
+        gap: 1.5rem;
+        padding: 1.5rem;
+    }
+
+    .profile-image img {
+        width: 200px;
+        height: 200px;
+        margin: 0 auto;
+    }
+
+    .profile-info {
         text-align: center;
+    }
+
+    .profile-info h2 {
+        font-size: 1.8rem;
+    }
+
+    .profile-info .title {
+        font-size: 1.1rem;
+    }
+
+    .social-links {
+        justify-content: center;
+    }
+
+    .timeline {
+        padding-left: 1.5rem;
+    }
+
+    .skills-grid {
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    }
+
+    .skills-grid span,
+    .language-skills span {
+        font-size: 1.1rem;
+        padding: 0.6rem 1rem;
+    }
+
+    section {
+        padding: 1.5rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    .timeline-item h3 {
+        font-size: 1.2rem;
+    }
+
+    .timeline-item h4 {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        margin: 0 0.5rem;
+        padding: 3.5rem 0.5rem 1.5rem 0.5rem;
     }
 
     .profile-image img {
@@ -273,24 +337,68 @@ footer p {
         height: 150px;
     }
 
-    .container {
-        padding: 1rem 2rem;
+    .profile-info h2 {
+        font-size: 1.5rem;
     }
 
-    .timeline {
-        padding-left: 1rem;
+    .profile-info .title {
+        font-size: 1rem;
     }
 
     .skills-grid {
-        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+        grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
     }
 
-    header {
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-        text-align: left;
-        gap: 0;
+    .skills-grid span,
+    .language-skills span {
+        font-size: 1rem;
+        padding: 0.5rem 0.8rem;
+    }
+
+    section {
+        padding: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    h2 {
+        font-size: 1.3rem;
+        margin-bottom: 1rem;
+    }
+
+    .timeline-item {
+        padding-left: 1rem;
+    }
+
+    .timeline-item h3 {
+        font-size: 1.1rem;
+    }
+
+    .timeline-item h4 {
+        font-size: 0.9rem;
+    }
+
+    .timeline-item .date {
+        font-size: 0.9rem;
+    }
+
+    .social-links a {
+        font-size: 0.9rem;
+    }
+
+    .btn-linkedin, .btn-email {
+        padding: 0.5rem 1rem;
+        font-size: 0.9rem;
+    }
+}
+
+@media (hover: none) {
+    .skills-grid span,
+    .language-skills span,
+    .social-links a,
+    .btn-linkedin,
+    .btn-email {
+        min-height: 44px;
+        min-width: 44px;
     }
 }
 
