@@ -261,10 +261,66 @@ footer p {
     margin-bottom: 0.5rem;
 }
 
+@media (max-width: 900px) {
+    .container {
+        margin: 0 2rem;
+        padding: 5rem 2rem 2rem 2rem;
+        zoom: 0.9;
+    }
+
+    .fixed-header {
+        padding: 1.2rem 2rem;
+    }
+
+    .profile-hero-name {
+        font-size: 3rem;
+    }
+
+    .profile-hero-title {
+        font-size: 1.5rem;
+    }
+
+    .profile-hero-location {
+        font-size: 1.2rem;
+    }
+}
+
 @media (max-width: 768px) {
     .container {
-        margin: 0 1rem;
-        padding: 4rem 1rem 2rem 1rem;
+        margin: 0 1.5rem;
+        padding: 4.5rem 1.5rem 2rem 1.5rem;
+        zoom: 0.8;
+    }
+
+    .fixed-header {
+        padding: 1rem 1.5rem;
+    }
+
+    .profile-hero-name {
+        font-size: 2.5rem;
+    }
+
+    .profile-hero-title {
+        font-size: 1.3rem;
+    }
+
+    .profile-hero-location {
+        font-size: 1.1rem;
+    }
+
+    .section-title {
+        font-size: 1.8rem;
+        margin: 2.5rem 0 1.2rem 0;
+    }
+
+    section.experience,
+    section.skills,
+    section.education,
+    section.certifications,
+    section.soft-skills,
+    section.languages {
+        padding: 1.5rem;
+        margin-bottom: 1.5rem;
     }
 
     .profile {
@@ -324,70 +380,112 @@ footer p {
     .timeline-item h4 {
         font-size: 1rem;
     }
+
+    .profile-hero-links {
+        gap: 1.2rem;
+    }
+
+    .btn-linkedin, 
+    .btn-email {
+        padding: 0.8rem 1.8rem;
+    }
 }
 
 @media (max-width: 480px) {
     .container {
-        margin: 0 0.5rem;
-        padding: 3.5rem 0.5rem 1.5rem 0.5rem;
+        margin: 0 1rem;
+        padding: 4rem 1rem 2rem 1rem;
+        zoom: 0.7;
     }
 
-    .profile-image img {
-        width: 150px;
-        height: 150px;
+    .fixed-header {
+        padding: 1rem;
     }
 
-    .profile-info h2 {
+    .cv-title {
         font-size: 1.5rem;
     }
 
-    .profile-info .title {
-        font-size: 1rem;
+    .profile-hero-img img {
+        width: 120px;
+        height: 120px;
     }
 
-    .skills-grid {
-        grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    .profile-hero-name {
+        font-size: 2rem;
+        margin-top: 1rem;
     }
 
-    .skills-grid span,
-    .language-skills span {
-        font-size: 1rem;
-        padding: 0.5rem 0.8rem;
-    }
-
-    section {
-        padding: 1rem;
-        margin-bottom: 1rem;
-    }
-
-    h2 {
-        font-size: 1.3rem;
-        margin-bottom: 1rem;
-    }
-
-    .timeline-item {
-        padding-left: 1rem;
-    }
-
-    .timeline-item h3 {
+    .profile-hero-title {
         font-size: 1.1rem;
     }
 
+    .profile-hero-location {
+        font-size: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    .profile-hero-links {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1rem;
+    }
+
+    .btn-linkedin, 
+    .btn-email {
+        padding: 0.8rem 1.5rem;
+    }
+
+    .section-title {
+        font-size: 1.5rem;
+        margin: 2rem 0 1rem 0;
+    }
+
+    .timeline-item h3 {
+        font-size: 1.2rem;
+    }
+
     .timeline-item h4 {
-        font-size: 0.9rem;
+        font-size: 1rem;
     }
 
     .timeline-item .date {
         font-size: 0.9rem;
     }
 
-    .social-links a {
-        font-size: 0.9rem;
+    .skills-grid {
+        grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+        gap: 1rem;
     }
 
-    .btn-linkedin, .btn-email {
-        padding: 0.5rem 1rem;
+    .skills-grid span,
+    .language-skills span {
+        padding: 0.8rem 1.2rem;
+    }
+
+    footer {
+        padding: 1rem;
         font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 360px) {
+    .container {
+        margin: 0 0.8rem;
+        padding: 3.5rem 0.8rem 1.5rem 0.8rem;
+        zoom: 0.65;
+    }
+
+    .profile-hero-links {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .btn-linkedin, 
+    .btn-email {
+        width: 100%;
+        max-width: 280px;
     }
 }
 
@@ -397,8 +495,8 @@ footer p {
     .social-links a,
     .btn-linkedin,
     .btn-email {
-        min-height: 44px;
-        min-width: 44px;
+        min-height: 48px;
+        min-width: 48px;
     }
 }
 
@@ -622,13 +720,6 @@ footer {
     font-size: 1.2rem;
 }
 
-@media (max-width: 900px) {
-    .container {
-        margin: 0 8rem;
-        padding: 5.5rem 1.2rem 2rem 1.2rem;
-    }
-}
-
 @media (max-width: 600px) {
     .container {
         margin: 0 7.5rem;
@@ -709,8 +800,18 @@ footer {
 html, body {
   width: 100%;
   overflow-x: hidden;
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 img {
   max-width: 100%;
   height: auto;
+}
+
+/* Miglioramento della leggibilità su mobile */
+@media (max-width: 480px) {
+    body {
+        -webkit-text-size-adjust: none;
+    }
 }
