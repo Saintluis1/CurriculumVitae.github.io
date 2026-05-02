@@ -1,357 +1,488 @@
 <!DOCTYPE html>
 <html class="scroll-smooth" lang="it">
+
 <head>
-    <meta charset="utf-8"/>
-    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
     <title data-it="Luigi Lafiandra | CV" data-en="Luigi Lafiandra | CV">Luigi Lafiandra | CV</title>
     <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
-    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
     <script id="tailwind-config">
-          tailwind.config = {
+        tailwind.config = {
             darkMode: "class",
             theme: {
-              extend: {
-                colors: {
-                  "secondary-fixed-dim": "#d6d3d8",
-                  "on-error-container": "#782232",
-                  "surface-container-lowest": "#ffffff",
-                  "error-container": "#ff8b9a",
-                  "surface-dim": "#cfdce3",
-                  "on-background": "#2a3439",
-                  "on-error": "#fff7f7",
-                  "on-surface": "#2a3439",
-                  "secondary-container": "#e4e1e6",
-                  "surface-container-high": "#e1e9ee",
-                  "primary-dim": "#334d9d",
-                  "on-tertiary-fixed-variant": "#5f5773",
-                  "surface-container": "#e8eff3",
-                  "background": "#f7f9fb",
-                  "outline-variant": "#a9b4b9",
-                  "primary-container": "#dce1ff",
-                  "tertiary-fixed-dim": "#dacff0",
-                  "on-tertiary-fixed": "#423b56",
-                  "tertiary-container": "#e8ddff",
-                  "secondary-dim": "#535356",
-                  "outline": "#717c82",
-                  "surface-variant": "#d9e4ea",
-                  "on-surface-variant": "#566166",
-                  "secondary-fixed": "#e4e1e6",
-                  "primary-fixed-dim": "#c9d3ff",
-                  "error-dim": "#4f0116",
-                  "on-secondary-fixed": "#3f3f43",
-                  "on-secondary": "#fbf8fc",
-                  "on-primary-container": "#334c9d",
-                  "on-tertiary": "#fdf7ff",
-                  "on-primary-fixed-variant": "#3d57a7",
-                  "on-tertiary-container": "#554e69",
-                  "surface-container-low": "#f0f4f7",
-                  "surface": "#f7f9fb",
-                  "on-primary-fixed": "#1d3989",
-                  "error": "#9e3f4e",
-                  "primary-fixed": "#dce1ff",
-                  "surface-tint": "#4059aa",
-                  "primary": "#4059aa",
-                  "tertiary": "#625b77",
-                  "tertiary-fixed": "#e8ddff",
-                  "secondary": "#5f5f62",
-                  "inverse-primary": "#8fa7fe",
-                  "tertiary-dim": "#564f6a",
-                  "surface-bright": "#f7f9fb",
-                  "inverse-surface": "#0b0f10",
-                  "on-secondary-container": "#525155",
-                  "on-secondary-fixed-variant": "#5b5b5f",
-                  "inverse-on-surface": "#9a9d9f",
-                  "surface-container-highest": "#d9e4ea",
-                  "on-primary": "#f8f7ff"
+                extend: {
+                    colors: {
+                        "secondary-fixed-dim": "#d6d3d8",
+                        "on-error-container": "#782232",
+                        "surface-container-lowest": "#ffffff",
+                        "error-container": "#ff8b9a",
+                        "surface-dim": "#cfdce3",
+                        "on-background": "#2a3439",
+                        "on-error": "#fff7f7",
+                        "on-surface": "#2a3439",
+                        "secondary-container": "#e4e1e6",
+                        "surface-container-high": "#e1e9ee",
+                        "primary-dim": "#334d9d",
+                        "on-tertiary-fixed-variant": "#5f5773",
+                        "surface-container": "#e8eff3",
+                        "background": "#f7f9fb",
+                        "outline-variant": "#a9b4b9",
+                        "primary-container": "#dce1ff",
+                        "tertiary-fixed-dim": "#dacff0",
+                        "on-tertiary-fixed": "#423b56",
+                        "tertiary-container": "#e8ddff",
+                        "secondary-dim": "#535356",
+                        "outline": "#717c82",
+                        "surface-variant": "#d9e4ea",
+                        "on-surface-variant": "#566166",
+                        "secondary-fixed": "#e4e1e6",
+                        "primary-fixed-dim": "#c9d3ff",
+                        "error-dim": "#4f0116",
+                        "on-secondary-fixed": "#3f3f43",
+                        "on-secondary": "#fbf8fc",
+                        "on-primary-container": "#334c9d",
+                        "on-tertiary": "#fdf7ff",
+                        "on-primary-fixed-variant": "#3d57a7",
+                        "on-tertiary-container": "#554e69",
+                        "surface-container-low": "#f0f4f7",
+                        "surface": "#f7f9fb",
+                        "on-primary-fixed": "#1d3989",
+                        "error": "#9e3f4e",
+                        "primary-fixed": "#dce1ff",
+                        "surface-tint": "#4059aa",
+                        "primary": "#4059aa",
+                        "tertiary": "#625b77",
+                        "tertiary-fixed": "#e8ddff",
+                        "secondary": "#5f5f62",
+                        "inverse-primary": "#8fa7fe",
+                        "tertiary-dim": "#564f6a",
+                        "surface-bright": "#f7f9fb",
+                        "inverse-surface": "#0b0f10",
+                        "on-secondary-container": "#525155",
+                        "on-secondary-fixed-variant": "#5b5b5f",
+                        "inverse-on-surface": "#9a9d9f",
+                        "surface-container-highest": "#d9e4ea",
+                        "on-primary": "#f8f7ff"
+                    },
+                    fontFamily: {
+                        "headline": ["Inter"],
+                        "body": ["Inter"],
+                        "label": ["Inter"]
+                    },
+                    borderRadius: { "DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem" },
                 },
-                fontFamily: {
-                  "headline": ["Inter"],
-                  "body": ["Inter"],
-                  "label": ["Inter"]
-                },
-                borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
-              },
             },
-          }
+        }
     </script>
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body class="text-on-surface selection:bg-primary-container selection:text-on-primary-container">
 
-<!-- TopNavBar -->
-<header class="fixed top-0 w-full z-50 bg-white/80 dark:bg-slate-900/80 backdrop-blur-xl shadow-[0_20px_40px_rgba(42,52,57,0.04)]">
-    <nav class="flex justify-between items-center max-w-7xl mx-auto px-8 h-20">
-        <div class="text-xl font-bold tracking-tighter text-[#2a3439] dark:text-white uppercase">
-            Luigi Lafiandra
-        </div>
-        <div class="hidden md:flex items-center space-x-10 font-['Inter'] font-medium tracking-tight text-sm">
-            <a class="nav-link active" href="#bio" data-it="Bio" data-en="Bio">Bio</a>
-            <a class="nav-link" href="#experience" data-it="Esperienze" data-en="Experience">Esperienze</a>
-            <a class="nav-link" href="#skills" data-it="Competenze" data-en="Skills">Competenze</a>
-            <a class="nav-link" href="#education" data-it="Formazione" data-en="Education">Formazione</a>
-            <a class="nav-link" href="#certifications" data-it="Corsi" data-en="Courses">Corsi</a>
-            <a class="nav-link" href="#passions" data-it="Passioni" data-en="Passions">Passioni</a>
-        </div>
-        
-        <div class="flex items-center gap-6">
-            <div class="language-toggle">
-                <input type="checkbox" id="lang-switch" />
-                <label for="lang-switch" class="lang-slider">
-                    <span class="flag flag-it"></span>
-                    <span class="flag flag-en"></span>
-                </label>
+    <!-- TopNavBar -->
+    <header
+        class="fixed top-0 w-full z-50 bg-white/80 dark:bg-slate-900/80 backdrop-blur-xl shadow-[0_20px_40px_rgba(42,52,57,0.04)]">
+        <nav class="flex justify-between items-center max-w-7xl mx-auto px-8 h-20">
+            <div class="text-xl font-bold tracking-tighter text-[#2a3439] dark:text-white uppercase">
+                Luigi Lafiandra
             </div>
-            <a href="https://www.linkedin.com/in/luigi-lafiandra-87098b233/" target="_blank" class="primary-gradient text-on-primary px-6 py-2.5 rounded-xl font-medium text-sm transition-transform active:scale-95 shadow-lg shadow-primary/20">
-                LinkedIn
-            </a>
-        </div>
-    </nav>
-</header>
+            <div class="hidden md:flex items-center space-x-10 font-['Inter'] font-medium tracking-tight text-sm">
+                <a class="nav-link active" href="#bio" data-it="Bio" data-en="Bio">Bio</a>
+                <a class="nav-link" href="#experience" data-it="Esperienze" data-en="Experience">Esperienze</a>
+                <a class="nav-link" href="#skills" data-it="Competenze" data-en="Skills">Competenze</a>
+                <a class="nav-link" href="#education" data-it="Formazione" data-en="Education">Formazione</a>
+                <a class="nav-link" href="#certifications" data-it="Corsi" data-en="Courses">Corsi</a>
+                <a class="nav-link" href="#passions" data-it="Passioni" data-en="Passions">Passioni</a>
+            </div>
 
-<main class="pt-20">
-    <!-- Hero Section -->
-    <section class="min-h-[80vh] flex flex-col items-center justify-center text-center px-6 bg-surface" id="bio">
-        <div class="relative mb-8">
-            <div class="w-40 h-40 md:w-52 md:h-52 rounded-[2.5rem] overflow-hidden shadow-2xl">
-                <img src="images.png" alt="Luigi Lafiandra" class="w-full h-full object-cover scale-[1.45] origin-center">
+            <div class="flex items-center gap-6">
+                <div class="language-toggle">
+                    <input type="checkbox" id="lang-switch" />
+                    <label for="lang-switch" class="lang-slider">
+                        <span class="flag flag-it"></span>
+                        <span class="flag flag-en"></span>
+                    </label>
+                </div>
+                <a href="https://www.linkedin.com/in/luigi-lafiandra-87098b233/" target="_blank"
+                    class="primary-gradient text-on-primary px-6 py-2.5 rounded-xl font-medium text-sm transition-transform active:scale-95 shadow-lg shadow-primary/20">
+                    LinkedIn
+                </a>
             </div>
-        </div>
-        <h1 class="text-5xl md:text-7xl font-extrabold tracking-tighter text-on-surface mb-4 max-w-4xl">Luigi Lafiandra</h1>
-        <p class="text-xl text-on-surface-variant font-medium mb-2" data-it="Business Analyst & Cost Controller" data-en="Business Analyst & Cost Controller">Business Analyst & Cost Controller</p>
-        <div class="flex flex-wrap justify-center gap-4 mb-8">
-            <span class="bg-surface-container-high px-4 py-1.5 rounded-full text-xs font-medium uppercase tracking-widest text-on-surface-variant" data-it="Business Analysis" data-en="Business Analysis">Business Analysis</span>
-            <span class="bg-surface-container-high px-4 py-1.5 rounded-full text-xs font-medium uppercase tracking-widest text-on-surface-variant" data-it="Cost Control" data-en="Cost Control">Cost Control</span>
-            <span class="bg-surface-container-high px-4 py-1.5 rounded-full text-xs font-medium uppercase tracking-widest text-on-surface-variant" data-it="Data Strategy" data-en="Data Strategy">Data Strategy</span>
-        </div>
-        <!-- Contacts under location -->
-        <div class="flex flex-col items-center gap-3 text-on-surface-variant">
-            <div class="flex items-center gap-2 font-medium">
-                <span class="material-symbols-outlined text-primary text-base">location_on</span>
-                <span data-it="Andria (BT), Italia" data-en="Andria (BT), Italy">Andria (BT), Italia</span>
-            </div>
-            <div class="flex items-center gap-2">
-                <span class="material-symbols-outlined text-primary text-base">alternate_email</span>
-                <a href="mailto:luigi.lafiandra@hotmail.com" class="hover:text-primary transition-colors">luigi.lafiandra@hotmail.com</a>
-            </div>
-            <div class="flex items-center gap-2">
-                <span class="material-symbols-outlined text-primary text-base">phone</span>
-                <a href="tel:+393312827563" class="hover:text-primary transition-colors">+39 331 2827563</a>
-            </div>
-            <div class="flex items-center gap-2">
-                <span class="material-symbols-outlined text-primary text-base">work</span>
-                <a href="https://www.linkedin.com/in/luigi-lafiandra-87098b233/" target="_blank" class="hover:text-primary transition-colors">linkedin.com/in/luigi-lafiandra</a>
-            </div>
-        </div>
-    </section>
+        </nav>
+    </header>
 
-    <!-- Experience Timeline -->
-    <section class="py-24 bg-surface-container-low px-8" id="experience">
-        <div class="max-w-5xl mx-auto">
-            <h2 class="text-sm font-bold tracking-[0.2em] text-primary uppercase mb-16 ml-2" data-it="Percorso Professionale" data-en="Professional Legacy">Percorso Professionale</h2>
-            <div class="space-y-16">
-                <!-- Role 1 -->
-                <div class="grid md:grid-cols-[1fr_2.5fr] gap-8 md:gap-20">
-                    <div class="border-l-2 border-primary/20 pl-8 py-2">
-                        <span class="text-xs font-bold text-outline tracking-widest uppercase" data-it="2025 — Oggi" data-en="2025 — Today">2025 — Oggi</span>
-                        <h3 class="text-2xl font-bold text-on-surface mt-2" data-it="Business Analyst" data-en="Business Analyst">Business Analyst</h3>
-                        <p class="text-primary font-medium mt-1">Base Protection S.r.l.</p>
-                    </div>
-                    <ul class="text-on-surface-variant leading-relaxed text-base space-y-2 list-disc list-inside">
-                        <li data-it="Management Control cross-funzionale (Operations, Quality, Sales, Finance, Supply Chain, HR, IT)" data-en="Cross-functional Management Control (Operations, Quality, Sales, Finance, Supply Chain, HR, IT)">Management Control cross-funzionale (Operations, Quality, Sales, Finance, Supply Chain, HR, IT)</li>
-                        <li data-it="Control & Data Analysis" data-en="Control & Data Analysis">Control & Data Analysis</li>
-                        <li data-it="Analisi economica, finanziaria e industriale (margini, costo dei servizi, produttività e logistica)" data-en="Economic, financial and industrial analysis (margins, cost of services, productivity and logistics)">Analisi economica, finanziaria e industriale (margini, costo dei servizi, produttività e logistica)</li>
-                        <li data-it="Definizione e misurazione dei KPI" data-en="KPI definition and measurement">Definizione e misurazione dei KPI</li>
-                    </ul>
-                </div>
-                <!-- Role 2 -->
-                <div class="grid md:grid-cols-[1fr_2.5fr] gap-8 md:gap-20">
-                    <div class="border-l-2 border-primary/20 pl-8 py-2">
-                        <span class="text-xs font-bold text-outline tracking-widest uppercase">2024 — 2025</span>
-                        <h3 class="text-2xl font-bold text-on-surface mt-2" data-it="People KPI Analyst & Cost Controller" data-en="People KPI Analyst & Cost Controller">People KPI Analyst & Cost Controller</h3>
-                        <p class="text-primary font-medium mt-1">Base Protection S.r.l.</p>
-                    </div>
-                    <ul class="text-on-surface-variant leading-relaxed text-base space-y-2 list-disc list-inside">
-                        <li data-it="People cost control" data-en="People cost control">People cost control</li>
-                        <li data-it="Data Analysis & creazione Dashboard per il decision making" data-en="Data Analysis & Dashboard creation for decision making">Data Analysis & creazione Dashboard per il decision making</li>
-                        <li data-it="Predisposizione report & dashboard KPI" data-en="KPI reports & dashboard preparation">Predisposizione report & dashboard KPI</li>
-                        <li data-it="Monitoraggio KPI economici, finanziari e di sostenibilità" data-en="Monitoring of economic, financial and sustainability KPIs">Monitoraggio KPI economici, finanziari e di sostenibilità</li>
-                    </ul>
-                </div>
-                <!-- Role 3 -->
-                <div class="grid md:grid-cols-[1fr_2.5fr] gap-8 md:gap-20">
-                    <div class="border-l-2 border-primary/20 pl-8 py-2">
-                        <span class="text-xs font-bold text-outline tracking-widest uppercase">2023</span>
-                        <h3 class="text-2xl font-bold text-on-surface mt-2" data-it="HR Generalist" data-en="HR Generalist">HR Generalist</h3>
-                        <p class="text-primary font-medium mt-1">Base Protection S.r.l.</p>
-                    </div>
-                    <ul class="text-on-surface-variant leading-relaxed text-base space-y-2 list-disc list-inside">
-                        <li data-it="Recruiting, Hiring & Training" data-en="Recruiting, Hiring & Training">Recruiting, Hiring & Training</li>
-                        <li data-it="Analisi dei fabbisogni e ricerca finanziamento della Formazione" data-en="Training needs assessment & financing research">Analisi dei fabbisogni e ricerca finanziamento della Formazione</li>
-                        <li data-it="Gestione Welfare & Ticket Restaurant" data-en="Welfare management & Ticket Restaurant">Gestione Welfare & Ticket Restaurant</li>
-                        <li data-it="Sviluppo innovazione AI in dipartimento HR" data-en="AI innovation development in HR department">Sviluppo innovazione AI in dipartimento HR</li>
-                    </ul>
-                </div>
-                <!-- Role 4 -->
-                <div class="grid md:grid-cols-[1fr_2.5fr] gap-8 md:gap-20">
-                    <div class="border-l-2 border-primary/20 pl-8 py-2">
-                        <span class="text-xs font-bold text-outline tracking-widest uppercase">2019 — 2024</span>
-                        <h3 class="text-2xl font-bold text-on-surface mt-2" data-it="Consulente freelance e dir. artistica" data-en="Freelance Consultant & Artistic Committee">Consulente freelance e dir. artistica</h3>
-                        <p class="text-primary font-medium mt-1" data-it="Agenzia organizzazione eventi" data-en="Event organization agency">Agenzia organizzazione eventi</p>
-                    </div>
-                    <ul class="text-on-surface-variant leading-relaxed text-base space-y-2 list-disc list-inside">
-                        <li data-it="Responsabile della comunicazione e Budgeting & contabilità" data-en="Responsible for communication and Budgeting & accounting">Responsabile della comunicazione e Budgeting & contabilità</li>
-                        <li data-it="Social Media Manager" data-en="Social Media Manager">Social Media Manager</li>
-                        <li data-it="Gestione risorse umane (volontari, collaboratori e ospiti dei festival)" data-en="Human Resources management (volunteers, collaborators and festival guests)">Gestione risorse umane (volontari, collaboratori e ospiti dei festival)</li>
-                        <li data-it="Responsabile tecnico (audio, video, luci). Festival: Castel dei Mondi, Futuro Anteriore Fest, Festival della Disperazione" data-en="Technical manager (audio, video, lighting). Festivals: Castel dei Mondi, Futuro Anteriore Fest, Festival della Disperazione">Responsabile tecnico (audio, video, luci). Festival: Castel dei Mondi, Futuro Anteriore Fest, Festival della Disperazione</li>
-                    </ul>
+    <main class="pt-20">
+        <!-- Hero Section -->
+        <section class="min-h-[80vh] flex flex-col items-center justify-center text-center px-6 bg-surface" id="bio">
+            <div class="relative mb-8">
+                <div class="w-40 h-40 md:w-52 md:h-52 rounded-[2.5rem] overflow-hidden shadow-2xl">
+                    <img src="images.png" alt="Luigi Lafiandra"
+                        class="w-full h-full object-cover scale-[1.45] origin-center">
                 </div>
             </div>
-        </div>
-    </section>
+            <h1 class="text-5xl md:text-7xl font-extrabold tracking-tighter text-on-surface mb-4 max-w-4xl">Luigi
+                Lafiandra</h1>
+            <p class="text-xl text-on-surface-variant font-medium mb-2" data-it="Business Analyst & Cost Controller"
+                data-en="Business Analyst & Cost Controller">Business Analyst & Cost Controller</p>
+            <div class="flex flex-wrap justify-center gap-4 mb-8">
+                <span
+                    class="bg-surface-container-high px-4 py-1.5 rounded-full text-xs font-medium uppercase tracking-widest text-on-surface-variant"
+                    data-it="Business Analysis" data-en="Business Analysis">Business Analysis</span>
+                <span
+                    class="bg-surface-container-high px-4 py-1.5 rounded-full text-xs font-medium uppercase tracking-widest text-on-surface-variant"
+                    data-it="Cost Control" data-en="Cost Control">Cost Control</span>
+                <span
+                    class="bg-surface-container-high px-4 py-1.5 rounded-full text-xs font-medium uppercase tracking-widest text-on-surface-variant"
+                    data-it="Data Strategy" data-en="Data Strategy">Data Strategy</span>
+            </div>
+            <!-- Contacts under location -->
+            <div class="flex flex-col items-center gap-3 text-on-surface-variant">
+                <div class="flex items-center gap-2 font-medium">
+                    <span class="material-symbols-outlined text-primary text-base">location_on</span>
+                    <span data-it="Andria (BT), Italia" data-en="Andria (BT), Italy">Andria (BT), Italia</span>
+                </div>
+                <div class="flex items-center gap-2">
+                    <span class="material-symbols-outlined text-primary text-base">alternate_email</span>
+                    <a href="mailto:luigi.lafiandra@hotmail.com"
+                        class="hover:text-primary transition-colors">luigi.lafiandra@hotmail.com</a>
+                </div>
+                <div class="flex items-center gap-2">
+                    <span class="material-symbols-outlined text-primary text-base">phone</span>
+                    <a href="tel:+393312827563" class="hover:text-primary transition-colors">+39 331 2827563</a>
+                </div>
+                <div class="flex items-center gap-2">
+                    <span class="material-symbols-outlined text-primary text-base">work</span>
+                    <a href="https://www.linkedin.com/in/luigi-lafiandra-87098b233/" target="_blank"
+                        class="hover:text-primary transition-colors">linkedin.com/in/luigi-lafiandra</a>
+                </div>
+            </div>
+        </section>
 
-    <!-- Skills Section -->
-    <section class="py-24 bg-surface px-8" id="skills">
-        <div class="max-w-7xl mx-auto">
-            <div class="grid md:grid-cols-2 gap-20">
-                <div>
-                    <h2 class="text-sm font-bold tracking-[0.2em] text-primary uppercase mb-12" data-it="Competenze Tecniche" data-en="Technical Excellence">Competenze Tecniche</h2>
+        <!-- Experience Timeline -->
+        <section class="py-24 bg-surface-container-low px-8" id="experience">
+            <div class="max-w-5xl mx-auto">
+                <h2 class="text-sm font-bold tracking-[0.2em] text-primary uppercase mb-16 ml-2"
+                    data-it="Percorso Professionale" data-en="Professional Legacy">Percorso Professionale</h2>
+                <div class="space-y-16">
+                    <!-- Role 1 -->
+                    <div class="grid md:grid-cols-[1fr_2.5fr] gap-8 md:gap-20">
+                        <div class="border-l-2 border-primary/20 pl-8 py-2">
+                            <span class="text-xs font-bold text-outline tracking-widest uppercase" data-it="2025 — Oggi"
+                                data-en="2025 — Today">2025 — Oggi</span>
+                            <h3 class="text-2xl font-bold text-on-surface mt-2" data-it="Business Analyst"
+                                data-en="Business Analyst">Business Analyst</h3>
+                            <p class="text-primary font-medium mt-1">Base Protection S.r.l.</p>
+                        </div>
+                        <ul class="text-on-surface-variant leading-relaxed text-base space-y-2 list-disc list-inside">
+                            <li data-it="Management Control cross-funzionale (Operations, Quality, Sales, Finance, Supply Chain, HR, IT)"
+                                data-en="Cross-functional Management Control (Operations, Quality, Sales, Finance, Supply Chain, HR, IT)">
+                                Management Control cross-funzionale (Operations, Quality, Sales, Finance, Supply Chain,
+                                HR, IT)</li>
+                            <li data-it="Control & Data Analysis" data-en="Control & Data Analysis">Control & Data
+                                Analysis</li>
+                            <li data-it="Analisi economica, finanziaria e industriale (margini, costo dei servizi, produttività e logistica)"
+                                data-en="Economic, financial and industrial analysis (margins, cost of services, productivity and logistics)">
+                                Analisi economica, finanziaria e industriale (margini, costo dei servizi, produttività e
+                                logistica)</li>
+                            <li data-it="Definizione e misurazione dei KPI" data-en="KPI definition and measurement">
+                                Definizione e misurazione dei KPI</li>
+                        </ul>
+                    </div>
+                    <!-- Role 2 -->
+                    <div class="grid md:grid-cols-[1fr_2.5fr] gap-8 md:gap-20">
+                        <div class="border-l-2 border-primary/20 pl-8 py-2">
+                            <span class="text-xs font-bold text-outline tracking-widest uppercase">2024 — 2025</span>
+                            <h3 class="text-2xl font-bold text-on-surface mt-2"
+                                data-it="People KPI Analyst & Cost Controller"
+                                data-en="People KPI Analyst & Cost Controller">People KPI Analyst & Cost Controller</h3>
+                            <p class="text-primary font-medium mt-1">Base Protection S.r.l.</p>
+                        </div>
+                        <ul class="text-on-surface-variant leading-relaxed text-base space-y-2 list-disc list-inside">
+                            <li data-it="People cost control" data-en="People cost control">People cost control</li>
+                            <li data-it="Data Analysis & creazione Dashboard per il decision making"
+                                data-en="Data Analysis & Dashboard creation for decision making">Data Analysis &
+                                creazione Dashboard per il decision making</li>
+                            <li data-it="Predisposizione report & dashboard KPI"
+                                data-en="KPI reports & dashboard preparation">Predisposizione report & dashboard KPI
+                            </li>
+                            <li data-it="Monitoraggio KPI economici, finanziari e di sostenibilità"
+                                data-en="Monitoring of economic, financial and sustainability KPIs">Monitoraggio KPI
+                                economici, finanziari e di sostenibilità</li>
+                        </ul>
+                    </div>
+                    <!-- Role 3 -->
+                    <div class="grid md:grid-cols-[1fr_2.5fr] gap-8 md:gap-20">
+                        <div class="border-l-2 border-primary/20 pl-8 py-2">
+                            <span class="text-xs font-bold text-outline tracking-widest uppercase">2023</span>
+                            <h3 class="text-2xl font-bold text-on-surface mt-2" data-it="HR Generalist"
+                                data-en="HR Generalist">HR Generalist</h3>
+                            <p class="text-primary font-medium mt-1">Base Protection S.r.l.</p>
+                        </div>
+                        <ul class="text-on-surface-variant leading-relaxed text-base space-y-2 list-disc list-inside">
+                            <li data-it="Recruiting, Hiring & Training" data-en="Recruiting, Hiring & Training">
+                                Recruiting, Hiring & Training</li>
+                            <li data-it="Analisi dei fabbisogni e ricerca finanziamento della Formazione"
+                                data-en="Training needs assessment & financing research">Analisi dei fabbisogni e
+                                ricerca finanziamento della Formazione</li>
+                            <li data-it="Gestione Welfare & Ticket Restaurant"
+                                data-en="Welfare management & Ticket Restaurant">Gestione Welfare & Ticket Restaurant
+                            </li>
+                            <li data-it="Sviluppo innovazione AI in dipartimento HR"
+                                data-en="AI innovation development in HR department">Sviluppo innovazione AI in
+                                dipartimento HR</li>
+                        </ul>
+                    </div>
+                    <!-- Role 4 -->
+                    <div class="grid md:grid-cols-[1fr_2.5fr] gap-8 md:gap-20">
+                        <div class="border-l-2 border-primary/20 pl-8 py-2">
+                            <span class="text-xs font-bold text-outline tracking-widest uppercase">2019 — 2024</span>
+                            <h3 class="text-2xl font-bold text-on-surface mt-2"
+                                data-it="Consulente freelance e dir. artistica"
+                                data-en="Freelance Consultant & Artistic Committee">Consulente freelance e dir.
+                                artistica</h3>
+                            <p class="text-primary font-medium mt-1" data-it="Agenzia organizzazione eventi"
+                                data-en="Event organization agency">Agenzia organizzazione eventi</p>
+                        </div>
+                        <ul class="text-on-surface-variant leading-relaxed text-base space-y-2 list-disc list-inside">
+                            <li data-it="Responsabile della comunicazione e Budgeting & contabilità"
+                                data-en="Responsible for communication and Budgeting & accounting">Responsabile della
+                                comunicazione e Budgeting & contabilità</li>
+                            <li data-it="Social Media Manager" data-en="Social Media Manager">Social Media Manager</li>
+                            <li data-it="Gestione risorse umane (volontari, collaboratori e ospiti dei festival)"
+                                data-en="Human Resources management (volunteers, collaborators and festival guests)">
+                                Gestione risorse umane (volontari, collaboratori e ospiti dei festival)</li>
+                            <li data-it="Responsabile tecnico (audio, video, luci). Festival: Castel dei Mondi, Futuro Anteriore Fest, Festival della Disperazione"
+                                data-en="Technical manager (audio, video, lighting). Festivals: Castel dei Mondi, Futuro Anteriore Fest, Festival della Disperazione">
+                                Responsabile tecnico (audio, video, luci). Festival: Castel dei Mondi, Futuro Anteriore
+                                Fest, Festival della Disperazione</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section class="py-24 bg-surface px-8" id="skills">
+            <div class="max-w-7xl mx-auto">
+                <div class="grid md:grid-cols-2 gap-20">
+                    <div>
+                        <h2 class="text-sm font-bold tracking-[0.2em] text-primary uppercase mb-12"
+                            data-it="Competenze Tecniche" data-en="Technical Excellence">Competenze Tecniche</h2>
+                        <div class="flex flex-wrap gap-3">
+                            <span
+                                class="bg-surface-container px-4 py-2 rounded-lg text-sm font-medium text-on-surface-variant hover:bg-primary hover:text-on-primary hover:scale-105 transition-all duration-300 cursor-default">Microsoft
+                                Office (Advanced Excel, VBA)</span>
+                            <span
+                                class="bg-surface-container px-4 py-2 rounded-lg text-sm font-medium text-on-surface-variant hover:bg-primary hover:text-on-primary hover:scale-105 transition-all duration-300 cursor-default">AI
+                                & Automation system</span>
+                            <span
+                                class="bg-surface-container px-4 py-2 rounded-lg text-sm font-medium text-on-surface-variant hover:bg-primary hover:text-on-primary hover:scale-105 transition-all duration-300 cursor-default">BI
+                                (Power BI, Tableau, Qlik View, Sense)</span>
+                            <span
+                                class="bg-surface-container px-4 py-2 rounded-lg text-sm font-medium text-on-surface-variant hover:bg-primary hover:text-on-primary hover:scale-105 transition-all duration-300 cursor-default">Programming
+                                (SQL, Python Base)</span>
+                            <span
+                                class="bg-surface-container px-4 py-2 rounded-lg text-sm font-medium text-on-surface-variant hover:bg-primary hover:text-on-primary hover:scale-105 transition-all duration-300 cursor-default">ERP
+                                (BMS, Zucchetti, Infor M3)</span>
+                            <span
+                                class="bg-surface-container px-4 py-2 rounded-lg text-sm font-medium text-on-surface-variant hover:bg-primary hover:text-on-primary hover:scale-105 transition-all duration-300 cursor-default">Adobe
+                                Creative Suite</span>
+                        </div>
+                    </div>
+                    <div>
+                        <h2 class="text-sm font-bold tracking-[0.2em] text-primary uppercase mb-12"
+                            data-it="Competenze Trasversali" data-en="Soft Skills">Competenze Trasversali</h2>
+                        <div class="flex flex-wrap gap-3">
+                            <span
+                                class="bg-surface-container px-4 py-2 rounded-lg text-sm font-medium text-on-surface-variant hover:bg-primary hover:text-on-primary hover:scale-105 transition-all duration-300 cursor-default"
+                                data-it="Problem Solving" data-en="Problem Solving">Problem Solving</span>
+                            <span
+                                class="bg-surface-container px-4 py-2 rounded-lg text-sm font-medium text-on-surface-variant hover:bg-primary hover:text-on-primary hover:scale-105 transition-all duration-300 cursor-default"
+                                data-it="Project Management" data-en="Project Management">Project Management</span>
+                            <span
+                                class="bg-surface-container px-4 py-2 rounded-lg text-sm font-medium text-on-surface-variant hover:bg-primary hover:text-on-primary hover:scale-105 transition-all duration-300 cursor-default"
+                                data-it="Leadership Cooperativa" data-en="Cooperative Leadership">Leadership
+                                Cooperativa</span>
+                            <span
+                                class="bg-surface-container px-4 py-2 rounded-lg text-sm font-medium text-on-surface-variant hover:bg-primary hover:text-on-primary hover:scale-105 transition-all duration-300 cursor-default"
+                                data-it="Orientamento al Risultato" data-en="Result Orientation">Orientamento al
+                                Risultato</span>
+                            <span
+                                class="bg-surface-container px-4 py-2 rounded-lg text-sm font-medium text-on-surface-variant hover:bg-primary hover:text-on-primary hover:scale-105 transition-all duration-300 cursor-default"
+                                data-it="Pensiero Critico" data-en="Critical Thinking">Pensiero Critico</span>
+                            <span
+                                class="bg-surface-container px-4 py-2 rounded-lg text-sm font-medium text-on-surface-variant hover:bg-primary hover:text-on-primary hover:scale-105 transition-all duration-300 cursor-default"
+                                data-it="Empatia & Networking" data-en="Empathy & Networking">Empatia &
+                                Networking</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Language Skills -->
+                <div class="mt-16">
+                    <h2 class="text-sm font-bold tracking-[0.2em] text-primary uppercase mb-8"
+                        data-it="Competenze Linguistiche" data-en="Language Skills">Competenze Linguistiche</h2>
                     <div class="flex flex-wrap gap-3">
-                        <span class="bg-surface-container px-4 py-2 rounded-lg text-sm font-medium text-on-surface-variant hover:bg-primary hover:text-on-primary hover:scale-105 transition-all duration-300 cursor-default">Microsoft Office (Advanced Excel, VBA)</span>
-                        <span class="bg-surface-container px-4 py-2 rounded-lg text-sm font-medium text-on-surface-variant hover:bg-primary hover:text-on-primary hover:scale-105 transition-all duration-300 cursor-default">AI & Automation system</span>
-                        <span class="bg-surface-container px-4 py-2 rounded-lg text-sm font-medium text-on-surface-variant hover:bg-primary hover:text-on-primary hover:scale-105 transition-all duration-300 cursor-default">BI (Power BI, Tableau, Qlik View, Sense)</span>
-                        <span class="bg-surface-container px-4 py-2 rounded-lg text-sm font-medium text-on-surface-variant hover:bg-primary hover:text-on-primary hover:scale-105 transition-all duration-300 cursor-default">Programming (SQL, Python Base)</span>
-                        <span class="bg-surface-container px-4 py-2 rounded-lg text-sm font-medium text-on-surface-variant hover:bg-primary hover:text-on-primary hover:scale-105 transition-all duration-300 cursor-default">ERP (BMS, Zucchetti, Infor M3)</span>
-                        <span class="bg-surface-container px-4 py-2 rounded-lg text-sm font-medium text-on-surface-variant hover:bg-primary hover:text-on-primary hover:scale-105 transition-all duration-300 cursor-default">Adobe Creative Suite</span>
+                        <span
+                            class="bg-surface-container px-4 py-2 rounded-lg text-sm font-medium text-on-surface-variant hover:bg-primary hover:text-on-primary hover:scale-105 transition-all duration-300 cursor-default"
+                            data-it="🇮🇹 Italiano (Madrelingua)" data-en="🇮🇹 Italian (Native)">🇮🇹 Italiano
+                            (Madrelingua)</span>
+                        <span
+                            class="bg-surface-container px-4 py-2 rounded-lg text-sm font-medium text-on-surface-variant hover:bg-primary hover:text-on-primary hover:scale-105 transition-all duration-300 cursor-default"
+                            data-it="🇬🇧 Inglese (Proficiency)" data-en="🇬🇧 English (Proficiency)">🇬🇧 Inglese
+                            (Proficiency)</span>
                     </div>
                 </div>
-                <div>
-                    <h2 class="text-sm font-bold tracking-[0.2em] text-primary uppercase mb-12" data-it="Competenze Trasversali" data-en="Soft Skills">Competenze Trasversali</h2>
-                    <div class="flex flex-wrap gap-3">
-                        <span class="bg-surface-container px-4 py-2 rounded-lg text-sm font-medium text-on-surface-variant hover:bg-primary hover:text-on-primary hover:scale-105 transition-all duration-300 cursor-default" data-it="Problem Solving" data-en="Problem Solving">Problem Solving</span>
-                        <span class="bg-surface-container px-4 py-2 rounded-lg text-sm font-medium text-on-surface-variant hover:bg-primary hover:text-on-primary hover:scale-105 transition-all duration-300 cursor-default" data-it="Project Management" data-en="Project Management">Project Management</span>
-                        <span class="bg-surface-container px-4 py-2 rounded-lg text-sm font-medium text-on-surface-variant hover:bg-primary hover:text-on-primary hover:scale-105 transition-all duration-300 cursor-default" data-it="Leadership Cooperativa" data-en="Cooperative Leadership">Leadership Cooperativa</span>
-                        <span class="bg-surface-container px-4 py-2 rounded-lg text-sm font-medium text-on-surface-variant hover:bg-primary hover:text-on-primary hover:scale-105 transition-all duration-300 cursor-default" data-it="Orientamento al Risultato" data-en="Result Orientation">Orientamento al Risultato</span>
-                        <span class="bg-surface-container px-4 py-2 rounded-lg text-sm font-medium text-on-surface-variant hover:bg-primary hover:text-on-primary hover:scale-105 transition-all duration-300 cursor-default" data-it="Pensiero Critico" data-en="Critical Thinking">Pensiero Critico</span>
-                        <span class="bg-surface-container px-4 py-2 rounded-lg text-sm font-medium text-on-surface-variant hover:bg-primary hover:text-on-primary hover:scale-105 transition-all duration-300 cursor-default" data-it="Empatia & Networking" data-en="Empathy & Networking">Empatia & Networking</span>
+                <div class="hidden">
+                </div>
+            </div>
+        </section>
+
+        <!-- Education Section -->
+        <section class="py-24 bg-surface-container-low px-8" id="education">
+            <div class="max-w-7xl mx-auto">
+                <div class="mb-12 flex flex-col md:flex-row justify-between items-end gap-6">
+                    <h2 class="text-4xl font-bold tracking-tighter text-on-surface" data-it="Formazione"
+                        data-en="Education">Formazione</h2>
+                    <p class="text-on-surface-variant max-w-xs text-sm" data-it="Percorso accademico e universitario."
+                        data-en="Academic and university background.">Percorso accademico e universitario.</p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+                    <!-- Degree 1 -->
+                    <div
+                        class="bg-surface p-8 rounded-xl shadow-sm border border-outline/10 hover:scale-[1.05] hover:shadow-xl transition-all duration-300 cursor-default group hover:border-primary/30">
+                        <div class="flex justify-between items-start mb-4">
+                            <h4 class="text-xs font-bold tracking-widest uppercase text-primary"
+                                data-it="Laurea Magistrale" data-en="Master's Degree">Laurea Magistrale</h4>
+                            <span class="text-xs font-bold text-outline">2024 — 2026</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-on-surface mb-1" data-it="Economia & Digital Data Analysis"
+                            data-en="Economics & Digital Data Analysis">Economia & Digital Data Analysis</h3>
+                        <p class="text-primary font-medium mb-4 text-sm">Pegaso - Università Telematica</p>
+                        <div class="text-on-surface-variant text-xs space-y-2">
+                            <p class="italic" data-it="Tesi: Sistemi di reporting, programmazione e controllo"
+                                data-en="Thesis: Reporting systems, programming and control">Tesi di laurea in: Sistemi
+                                di reporting, programmazione e controllo</p>
+                            <p data-it="“L’impatto dell’innovazione tecnologica sui sistemi di controllo di gestione per la valutazione delle performance aziendali”"
+                                data-en="“Impact of technological innovation on management control systems for corporate performance assessment”">
+                                “L’impatto dell’innovazione tecnologica sui sistemi di controllo di gestione per la
+                                valutazione delle performance aziendali”</p>
+                        </div>
+                    </div>
+
+                    <!-- Degree 2 -->
+                    <div
+                        class="bg-surface p-8 rounded-xl shadow-sm border border-outline/10 hover:scale-[1.05] hover:shadow-xl transition-all duration-300 cursor-default group hover:border-primary/30">
+                        <div class="flex justify-between items-start mb-4">
+                            <h4 class="text-xs font-bold tracking-widest uppercase text-primary"
+                                data-it="Master I Livello" data-en="First Level Master">Master I Livello</h4>
+                            <span class="text-xs font-bold text-outline">2022 — 2023</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-on-surface mb-1" data-it="Organizzazione & HR Management"
+                            data-en="Organization & HR Management">Organizzazione & HR Management</h3>
+                        <p class="text-primary font-medium mb-4 text-sm">LUM - School of Management</p>
+                        <div
+                            class="text-on-surface-variant text-[11px] leading-relaxed grid grid-cols-1 md:grid-cols-2 gap-x-4 gap-y-1">
+                            <span data-it="• HR digital transformation" data-en="• HR digital transformation">• HR
+                                digital transformation</span>
+                            <span data-it="• Lean organization & innovation"
+                                data-en="• Lean organization & innovation">• Lean organization & innovation</span>
+                            <span data-it="• Soft skills" data-en="• Soft skills">• Soft skills</span>
+                            <span data-it="• Recruiting & training" data-en="• Recruiting & training">• Recruiting &
+                                training</span>
+                            <span data-it="• International strategies" data-en="• International strategies">•
+                                International strategies</span>
+                            <span data-it="• Budget & business plan" data-en="• Budget & business plan">• Budget &
+                                business plan</span>
+                            <span data-it="• Diritto sindacale" data-en="• Labor law">• Diritto sindacale</span>
+                            <span data-it="• Modelli econometrici" data-en="• Econometric models">• Modelli
+                                econometrici</span>
+                        </div>
+                    </div>
+
+                    <!-- Degree 3 -->
+                    <div
+                        class="bg-surface p-8 rounded-xl shadow-sm border border-outline/10 hover:scale-[1.05] hover:shadow-xl transition-all duration-300 cursor-default group hover:border-primary/30">
+                        <div class="flex justify-between items-start mb-4">
+                            <h4 class="text-xs font-bold tracking-widest uppercase text-primary"
+                                data-it="Laurea Magistrale" data-en="Master's Degree">Laurea Magistrale</h4>
+                            <span class="text-xs font-bold text-outline">2020 — 2023</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-on-surface mb-1" data-it="Scienze Filosofiche"
+                            data-en="Philosophical Sciences">Scienze Filosofiche</h3>
+                        <p class="text-primary font-medium mb-3 text-sm">Università degli Studi di Torino</p>
+                        <div class="flex items-center gap-2">
+                            <span class="px-3 py-1 bg-primary/10 text-primary rounded-full text-xs font-bold"
+                                data-it="Voto: 110/110" data-en="Grade: 110/110">110/110</span>
+                        </div>
+                    </div>
+
+                    <!-- Degree 4 -->
+                    <div
+                        class="bg-surface p-8 rounded-xl shadow-sm border border-outline/10 hover:scale-[1.05] hover:shadow-xl transition-all duration-300 cursor-default group hover:border-primary/30">
+                        <div class="flex justify-between items-start mb-4">
+                            <h4 class="text-xs font-bold tracking-widest uppercase text-primary"
+                                data-it="Laurea Triennale" data-en="Bachelor's Degree">Laurea Triennale</h4>
+                            <span class="text-xs font-bold text-outline">2016 — 2020</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-on-surface mb-1" data-it="Filosofia" data-en="Philosophy">
+                            Filosofia</h3>
+                        <p class="text-primary font-medium mb-3 text-sm">Università degli Studi di Bari "Aldo Moro"</p>
+                        <div class="flex items-center gap-2">
+                            <span class="px-3 py-1 bg-primary/10 text-primary rounded-full text-xs font-bold"
+                                data-it="Voto: 110/110 cum laude" data-en="Grade: 110/110 with honors">110/110 cum
+                                laude</span>
+                        </div>
+                    </div>
+
+                    <!-- Diploma -->
+                    <div
+                        class="bg-surface p-8 rounded-xl shadow-sm border border-outline/10 md:col-span-2 max-w-lg mx-auto w-full hover:scale-[1.05] hover:shadow-xl transition-all duration-300 cursor-default group hover:border-primary/30">
+                        <div class="flex justify-between items-start mb-4">
+                            <h4 class="text-xs font-bold tracking-widest uppercase text-primary"
+                                data-it="Maturità Scientifica" data-en="High School Diploma">Maturità Scientifica</h4>
+                            <span class="text-xs font-bold text-outline">2016</span>
+                        </div>
+                        <h3 class="text-lg font-bold text-on-surface mb-1" data-it="Liceo Scientifico “R. Nuzzi”"
+                            data-en="Scientific High School “R. Nuzzi”">Liceo Scientifico “R. Nuzzi”</h3>
+                        <p class="text-on-surface-variant text-sm">Andria (BT)</p>
                     </div>
                 </div>
             </div>
-            <!-- Language Skills -->
-            <div class="mt-16">
-                <h2 class="text-sm font-bold tracking-[0.2em] text-primary uppercase mb-8" data-it="Competenze Linguistiche" data-en="Language Skills">Competenze Linguistiche</h2>
-                <div class="flex flex-wrap gap-3">
-                    <span class="bg-surface-container px-4 py-2 rounded-lg text-sm font-medium text-on-surface-variant hover:bg-primary hover:text-on-primary hover:scale-105 transition-all duration-300 cursor-default" data-it="🇮🇹 Italiano (Madrelingua)" data-en="🇮🇹 Italian (Native)">🇮🇹 Italiano (Madrelingua)</span>
-                    <span class="bg-surface-container px-4 py-2 rounded-lg text-sm font-medium text-on-surface-variant hover:bg-primary hover:text-on-primary hover:scale-105 transition-all duration-300 cursor-default" data-it="🇬🇧 Inglese (Proficiency)" data-en="🇬🇧 English (Proficiency)">🇬🇧 Inglese (Proficiency)</span>
-                </div>
-            </div>
-            <div class="hidden">
-            </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Education Section -->
-    <section class="py-24 bg-surface-container-low px-8" id="education">
-        <div class="max-w-7xl mx-auto">
-            <div class="mb-12 flex flex-col md:flex-row justify-between items-end gap-6">
-                <h2 class="text-4xl font-bold tracking-tighter text-on-surface" data-it="Formazione" data-en="Education">Formazione</h2>
-                <p class="text-on-surface-variant max-w-xs text-sm" data-it="Percorso accademico e universitario." data-en="Academic and university background.">Percorso accademico e universitario.</p>
-            </div>
-            
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
-                <!-- Degree 1 -->
-                <div class="bg-surface p-8 rounded-xl shadow-sm border border-outline/10 hover:scale-[1.03] hover:shadow-xl transition-all duration-300 cursor-default group hover:border-primary/30">
-                    <div class="flex justify-between items-start mb-4">
-                        <h4 class="text-xs font-bold tracking-widest uppercase text-primary" data-it="Laurea Magistrale" data-en="Master's Degree">Laurea Magistrale</h4>
-                        <span class="text-xs font-bold text-outline">2024 — 2026</span>
-                    </div>
-                    <h3 class="text-xl font-bold text-on-surface mb-1" data-it="Economia & Digital Data Analysis" data-en="Economics & Digital Data Analysis">Economia & Digital Data Analysis</h3>
-                    <p class="text-primary font-medium mb-4 text-sm">Pegaso - Università Telematica</p>
-                    <div class="text-on-surface-variant text-xs space-y-2">
-                        <p class="italic" data-it="Tesi: Sistemi di reporting, programmazione e controllo" data-en="Thesis: Reporting systems, programming and control">Tesi di laurea in: Sistemi di reporting, programmazione e controllo</p>
-                        <p data-it="“L’impatto dell’innovazione tecnologica sui sistemi di controllo di gestione per la valutazione delle performance aziendali”" data-en="“Impact of technological innovation on management control systems for corporate performance assessment”">“L’impatto dell’innovazione tecnologica sui sistemi di controllo di gestione per la valutazione delle performance aziendali”</p>
-                    </div>
+        <!-- Professional Courses Section -->
+        <section class="py-24 bg-surface px-8" id="certifications">
+            <div class="max-w-7xl mx-auto">
+                <div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-6">
+                    <h2 class="text-4xl font-bold tracking-tighter text-on-surface" data-it="Corsi e Certificazioni"
+                        data-en="Courses & Certifications">Corsi e Certificazioni</h2>
+                    <p class="text-on-surface-variant max-w-xs text-sm"
+                        data-it="Formazione continua e certificazioni specialistiche."
+                        data-en="Continuous learning and specialist certifications.">Formazione continua e
+                        certificazioni specialistiche.</p>
                 </div>
-
-                <!-- Degree 2 -->
-                <div class="bg-surface p-8 rounded-xl shadow-sm border border-outline/10 hover:scale-[1.03] hover:shadow-xl transition-all duration-300 cursor-default group hover:border-primary/30">
-                    <div class="flex justify-between items-start mb-4">
-                        <h4 class="text-xs font-bold tracking-widest uppercase text-primary" data-it="Master I Livello" data-en="First Level Master">Master I Livello</h4>
-                        <span class="text-xs font-bold text-outline">2022 — 2023</span>
-                    </div>
-                    <h3 class="text-xl font-bold text-on-surface mb-1" data-it="Organizzazione & HR Management" data-en="Organization & HR Management">Organizzazione & HR Management</h3>
-                    <p class="text-primary font-medium mb-4 text-sm">LUM - School of Management</p>
-                    <div class="text-on-surface-variant text-[11px] leading-relaxed grid grid-cols-1 md:grid-cols-2 gap-x-4 gap-y-1">
-                        <span data-it="• HR digital transformation" data-en="• HR digital transformation">• HR digital transformation</span>
-                        <span data-it="• Lean organization & innovation" data-en="• Lean organization & innovation">• Lean organization & innovation</span>
-                        <span data-it="• Soft skills" data-en="• Soft skills">• Soft skills</span>
-                        <span data-it="• Recruiting & training" data-en="• Recruiting & training">• Recruiting & training</span>
-                        <span data-it="• International strategies" data-en="• International strategies">• International strategies</span>
-                        <span data-it="• Budget & business plan" data-en="• Budget & business plan">• Budget & business plan</span>
-                        <span data-it="• Diritto sindacale" data-en="• Labor law">• Diritto sindacale</span>
-                        <span data-it="• Modelli econometrici" data-en="• Econometric models">• Modelli econometrici</span>
-                    </div>
-                </div>
-
-                <!-- Degree 3 -->
-                <div class="bg-surface p-8 rounded-xl shadow-sm border border-outline/10 hover:scale-[1.03] hover:shadow-xl transition-all duration-300 cursor-default group hover:border-primary/30">
-                    <div class="flex justify-between items-start mb-4">
-                        <h4 class="text-xs font-bold tracking-widest uppercase text-primary" data-it="Laurea Magistrale" data-en="Master's Degree">Laurea Magistrale</h4>
-                        <span class="text-xs font-bold text-outline">2020 — 2023</span>
-                    </div>
-                    <h3 class="text-xl font-bold text-on-surface mb-1" data-it="Scienze Filosofiche" data-en="Philosophical Sciences">Scienze Filosofiche</h3>
-                    <p class="text-primary font-medium mb-3 text-sm">Università degli Studi di Torino</p>
-                    <div class="flex items-center gap-2">
-                        <span class="px-3 py-1 bg-primary/10 text-primary rounded-full text-xs font-bold" data-it="Voto: 110/110" data-en="Grade: 110/110">110/110</span>
-                    </div>
-                </div>
-
-                <!-- Degree 4 -->
-                <div class="bg-surface p-8 rounded-xl shadow-sm border border-outline/10 hover:scale-[1.03] hover:shadow-xl transition-all duration-300 cursor-default group hover:border-primary/30">
-                    <div class="flex justify-between items-start mb-4">
-                        <h4 class="text-xs font-bold tracking-widest uppercase text-primary" data-it="Laurea Triennale" data-en="Bachelor's Degree">Laurea Triennale</h4>
-                        <span class="text-xs font-bold text-outline">2016 — 2020</span>
-                    </div>
-                    <h3 class="text-xl font-bold text-on-surface mb-1" data-it="Filosofia" data-en="Philosophy">Filosofia</h3>
-                    <p class="text-primary font-medium mb-3 text-sm">Università degli Studi di Bari "Aldo Moro"</p>
-                    <div class="flex items-center gap-2">
-                        <span class="px-3 py-1 bg-primary/10 text-primary rounded-full text-xs font-bold" data-it="Voto: 110/110 cum laude" data-en="Grade: 110/110 with honors">110/110 cum laude</span>
-                    </div>
-                </div>
-
-                <!-- Diploma -->
-                <div class="bg-surface p-8 rounded-xl shadow-sm border border-outline/10 md:col-span-2 max-w-lg mx-auto w-full hover:scale-[1.03] hover:shadow-xl transition-all duration-300 cursor-default group hover:border-primary/30">
-                    <div class="flex justify-between items-start mb-4">
-                        <h4 class="text-xs font-bold tracking-widest uppercase text-primary" data-it="Maturità Scientifica" data-en="High School Diploma">Maturità Scientifica</h4>
-                        <span class="text-xs font-bold text-outline">2016</span>
-                    </div>
-                    <h3 class="text-lg font-bold text-on-surface mb-1" data-it="Liceo Scientifico “R. Nuzzi”" data-en="Scientific High School “R. Nuzzi”">Liceo Scientifico “R. Nuzzi”</h3>
-                    <p class="text-on-surface-variant text-sm">Andria (BT)</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Professional Courses Section -->
-    <section class="py-24 bg-surface px-8" id="certifications">
-        <div class="max-w-7xl mx-auto">
-            <div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-6">
-                <h2 class="text-4xl font-bold tracking-tighter text-on-surface" data-it="Corsi e Certificazioni" data-en="Courses & Certifications">Corsi e Certificazioni</h2>
-                <p class="text-on-surface-variant max-w-xs text-sm" data-it="Formazione continua e certificazioni specialistiche." data-en="Continuous learning and specialist certifications.">Formazione continua e certificazioni specialistiche.</p>
-            </div>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
 
                     <!-- 1 -->
-                    <div class="bg-surface p-6 rounded-xl shadow-sm border border-outline/10 hover:scale-[1.03] hover:shadow-xl transition-all duration-300 cursor-default group hover:border-primary/30">
+                    <div
+                        class="bg-surface p-6 rounded-xl shadow-sm border border-outline/10 hover:scale-[1.05] hover:shadow-xl transition-all duration-300 cursor-default group hover:border-primary/30">
                         <div class="flex justify-between items-start mb-3">
                             <h3 class="text-base font-bold text-on-surface">Corso di EXCEL Avanzato</h3>
                             <span class="text-xs font-bold text-primary shrink-0 ml-2">2023</span>
                         </div>
                         <p class="text-xs font-semibold text-outline mb-2">Fo.R.Um Formazione (200 ore)</p>
-                        <p class="text-on-surface-variant text-xs">Import/export dati · Tabelle Pivot · Funzioni Macro</p>
+                        <p class="text-on-surface-variant text-xs">Import/export dati · Tabelle Pivot · Funzioni Macro
+                        </p>
                     </div>
                     <!-- 2 -->
-                    <div class="bg-surface p-6 rounded-xl shadow-sm border border-outline/10 hover:scale-[1.03] hover:shadow-xl transition-all duration-300 cursor-default group hover:border-primary/30">
+                    <div
+                        class="bg-surface p-6 rounded-xl shadow-sm border border-outline/10 hover:scale-[1.05] hover:shadow-xl transition-all duration-300 cursor-default group hover:border-primary/30">
                         <div class="flex justify-between items-start mb-3">
                             <h3 class="text-base font-bold text-on-surface">Corso Marketing & e-commerce</h3>
                             <span class="text-xs font-bold text-primary shrink-0 ml-2">2020</span>
@@ -359,16 +490,20 @@
                         <p class="text-xs font-semibold text-outline mb-2">Fo.R.Um Formazione</p>
                     </div>
                     <!-- 3 -->
-                    <div class="bg-surface p-6 rounded-xl shadow-sm border border-outline/10 hover:scale-[1.03] hover:shadow-xl transition-all duration-300 cursor-default group hover:border-primary/30">
+                    <div
+                        class="bg-surface p-6 rounded-xl shadow-sm border border-outline/10 hover:scale-[1.05] hover:shadow-xl transition-all duration-300 cursor-default group hover:border-primary/30">
                         <div class="flex justify-between items-start mb-3">
-                            <h3 class="text-base font-bold text-on-surface">Corso Cedolini, Buste Paghe e Contrattazione</h3>
+                            <h3 class="text-base font-bold text-on-surface">Corso Cedolini, Buste Paghe e Contrattazione
+                            </h3>
                             <span class="text-xs font-bold text-primary shrink-0 ml-2">2023/24</span>
                         </div>
                         <p class="text-xs font-semibold text-outline mb-2">Dott. Fabrizio Pierno (48 ore)</p>
-                        <p class="text-on-surface-variant text-xs">Responsabile Risorse Umane, Amministrazione — FOND. APULIA FILM COMMISSION</p>
+                        <p class="text-on-surface-variant text-xs">Responsabile Risorse Umane, Amministrazione — FOND.
+                            APULIA FILM COMMISSION</p>
                     </div>
                     <!-- 4 -->
-                    <div class="bg-surface p-6 rounded-xl shadow-sm border border-outline/10 hover:scale-[1.03] hover:shadow-xl transition-all duration-300 cursor-default group hover:border-primary/30">
+                    <div
+                        class="bg-surface p-6 rounded-xl shadow-sm border border-outline/10 hover:scale-[1.05] hover:shadow-xl transition-all duration-300 cursor-default group hover:border-primary/30">
                         <div class="flex justify-between items-start mb-3">
                             <h3 class="text-base font-bold text-on-surface">Cybersecurity Awareness</h3>
                             <span class="text-xs font-bold text-primary shrink-0 ml-2">2023/24</span>
@@ -376,16 +511,19 @@
                         <p class="text-xs font-semibold text-outline mb-2">Telsy Skills (Telecom Italia S.p.A.)</p>
                     </div>
                     <!-- 5 -->
-                    <div class="bg-surface p-6 rounded-xl shadow-sm border border-outline/10 hover:scale-[1.03] hover:shadow-xl transition-all duration-300 cursor-default group hover:border-primary/30">
+                    <div
+                        class="bg-surface p-6 rounded-xl shadow-sm border border-outline/10 hover:scale-[1.05] hover:shadow-xl transition-all duration-300 cursor-default group hover:border-primary/30">
                         <div class="flex justify-between items-start mb-3">
                             <h3 class="text-base font-bold text-on-surface">Microsoft Digital Training</h3>
                             <span class="text-xs font-bold text-primary shrink-0 ml-2">2023/24</span>
                         </div>
                         <p class="text-xs font-semibold text-outline mb-2">Microsoft</p>
-                        <p class="text-on-surface-variant text-xs">Power BI · Introduzione al Machine Learning & AI · Copilot per Microsoft 365</p>
+                        <p class="text-on-surface-variant text-xs">Power BI · Introduzione al Machine Learning & AI ·
+                            Copilot per Microsoft 365</p>
                     </div>
                     <!-- 6 -->
-                    <div class="bg-surface p-6 rounded-xl shadow-sm border border-outline/10 hover:scale-[1.03] hover:shadow-xl transition-all duration-300 cursor-default group hover:border-primary/30">
+                    <div
+                        class="bg-surface p-6 rounded-xl shadow-sm border border-outline/10 hover:scale-[1.05] hover:shadow-xl transition-all duration-300 cursor-default group hover:border-primary/30">
                         <div class="flex justify-between items-start mb-3">
                             <h3 class="text-base font-bold text-on-surface">HR Analytics</h3>
                             <span class="text-xs font-bold text-primary shrink-0 ml-2">2023</span>
@@ -393,137 +531,174 @@
                         <p class="text-xs font-semibold text-outline mb-2">Zucchetti</p>
                     </div>
                     <!-- 7 -->
-                    <div class="bg-surface p-6 rounded-xl shadow-sm border border-outline/10 hover:scale-[1.03] hover:shadow-xl transition-all duration-300 cursor-default group hover:border-primary/30">
+                    <div
+                        class="bg-surface p-6 rounded-xl shadow-sm border border-outline/10 hover:scale-[1.05] hover:shadow-xl transition-all duration-300 cursor-default group hover:border-primary/30">
                         <div class="flex justify-between items-start mb-3">
                             <h3 class="text-base font-bold text-on-surface">HR Analytics Intensive Course Fall</h3>
                             <span class="text-xs font-bold text-primary shrink-0 ml-2">2024</span>
                         </div>
                         <p class="text-xs font-semibold text-outline mb-2">Talent Garden</p>
-                        <p class="text-on-surface-variant text-xs">Tecniche raccolta & analisi People Analytics; Data Driven Mindset; HR Strategy per Decision making; Principles of Machine Learning; AI & no-code platforms in HR.</p>
+                        <p class="text-on-surface-variant text-xs">Tecniche raccolta & analisi People Analytics; Data
+                            Driven Mindset; HR Strategy per Decision making; Principles of Machine Learning; AI &
+                            no-code platforms in HR.</p>
                     </div>
                     <!-- 8 -->
-                    <div class="bg-surface p-6 rounded-xl shadow-sm border border-outline/10 hover:scale-[1.03] hover:shadow-xl transition-all duration-300 cursor-default group hover:border-primary/30">
+                    <div
+                        class="bg-surface p-6 rounded-xl shadow-sm border border-outline/10 hover:scale-[1.05] hover:shadow-xl transition-all duration-300 cursor-default group hover:border-primary/30">
                         <div class="flex justify-between items-start mb-3">
                             <h3 class="text-base font-bold text-on-surface">Python week & Data week</h3>
                             <span class="text-xs font-bold text-primary shrink-0 ml-2">03/2025</span>
                         </div>
                         <p class="text-xs font-semibold text-outline mb-2">Data Masters (Webinar)</p>
-                        <p class="text-on-surface-variant text-xs">Visualizzazione Dati · SQL · Power BI · Tableau · Looker Studio · Python</p>
+                        <p class="text-on-surface-variant text-xs">Visualizzazione Dati · SQL · Power BI · Tableau ·
+                            Looker Studio · Python</p>
                     </div>
                     <!-- 9 -->
-                    <div class="bg-surface p-6 rounded-xl shadow-sm border border-outline/10 hover:scale-[1.03] hover:shadow-xl transition-all duration-300 cursor-default group hover:border-primary/30">
+                    <div
+                        class="bg-surface p-6 rounded-xl shadow-sm border border-outline/10 hover:scale-[1.05] hover:shadow-xl transition-all duration-300 cursor-default group hover:border-primary/30">
                         <div class="flex justify-between items-start mb-3">
                             <h3 class="text-base font-bold text-on-surface">ChatGPT for Administration</h3>
                             <span class="text-xs font-bold text-primary shrink-0 ml-2">05/2025</span>
                         </div>
                         <p class="text-xs font-semibold text-outline mb-2">W/Training</p>
-                        <p class="text-on-surface-variant text-xs">Ottimizzazione dei processi amministrativo-finanziari con ChatGPT</p>
+                        <p class="text-on-surface-variant text-xs">Ottimizzazione dei processi amministrativo-finanziari
+                            con ChatGPT</p>
                     </div>
                     <!-- 10 -->
-                    <div class="bg-surface p-6 rounded-xl shadow-sm border border-outline/10 hover:scale-[1.03] hover:shadow-xl transition-all duration-300 cursor-default group hover:border-primary/30">
+                    <div
+                        class="bg-surface p-6 rounded-xl shadow-sm border border-outline/10 hover:scale-[1.05] hover:shadow-xl transition-all duration-300 cursor-default group hover:border-primary/30">
                         <div class="flex justify-between items-start mb-3">
                             <h3 class="text-base font-bold text-on-surface">Data Analytics Tools</h3>
                             <span class="text-xs font-bold text-primary shrink-0 ml-2">05–12/2025</span>
                         </div>
                         <p class="text-xs font-semibold text-outline mb-2">Data Masters (Full Time Course)</p>
-                        <p class="text-on-surface-variant text-xs">Excel · Power BI · Tableau · Looker Studio · Python · SQL · MongoDB</p>
+                        <p class="text-on-surface-variant text-xs">Excel · Power BI · Tableau · Looker Studio · Python ·
+                            SQL · MongoDB</p>
                     </div>
                     <!-- 11 -->
-                    <div class="bg-surface p-6 rounded-xl shadow-sm border border-outline/10 hover:scale-[1.03] hover:shadow-xl transition-all duration-300 cursor-default group hover:border-primary/30">
+                    <div
+                        class="bg-surface p-6 rounded-xl shadow-sm border border-outline/10 hover:scale-[1.05] hover:shadow-xl transition-all duration-300 cursor-default group hover:border-primary/30">
                         <div class="flex justify-between items-start mb-3">
-                            <h3 class="text-base font-bold text-on-surface">ESG Program — Confindustria Bari / St. Chiara Next</h3>
+                            <h3 class="text-base font-bold text-on-surface">ESG Program — Confindustria Bari / St.
+                                Chiara Next</h3>
                             <span class="text-xs font-bold text-primary shrink-0 ml-2">11/2025–08/2026</span>
                         </div>
-                        <p class="text-xs font-semibold text-outline mb-2">Confindustria Bari-BAT / Santa Chiara Next / Unicredit</p>
-                        <p class="text-on-surface-variant text-xs">Sostenibilità (ESG), decarbonizzazione, economia circolare, bilancio di sostenibilità, finanza agevolata e integrazione IA nei processi aziendali.</p>
+                        <p class="text-xs font-semibold text-outline mb-2">Confindustria Bari-BAT / Santa Chiara Next /
+                            Unicredit</p>
+                        <p class="text-on-surface-variant text-xs">Sostenibilità (ESG), decarbonizzazione, economia
+                            circolare, bilancio di sostenibilità, finanza agevolata e integrazione IA nei processi
+                            aziendali.</p>
                     </div>
                 </div>
             </div>
 
-        </div>
-    </section>
+            </div>
+        </section>
 
-    <!-- Passions Section -->
-    <section class="py-24 bg-surface-container-low px-8" id="passions">
-        <div class="max-w-7xl mx-auto">
-            <h2 class="text-sm font-bold tracking-[0.2em] text-primary uppercase mb-16 text-center" data-it="Interessi & Passioni" data-en="Interests & Passions">Interessi & Passioni</h2>
-            <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-7 gap-6 md:gap-10">
-                <!-- Musica -->
-                <div class="text-center group">
-                    <div class="w-16 h-16 bg-surface-container-high rounded-2xl flex items-center justify-center mx-auto mb-4 group-hover:bg-primary group-hover:text-on-primary transition-all duration-300 shadow-sm group-hover:shadow-lg">
-                        <span class="material-symbols-outlined text-3xl">music_note</span>
+        <!-- Passions Section -->
+        <section class="py-24 bg-surface-container-low px-8" id="passions">
+            <div class="max-w-7xl mx-auto">
+                <h2 class="text-sm font-bold tracking-[0.2em] text-primary uppercase mb-16 text-center"
+                    data-it="Interessi & Passioni" data-en="Interests & Passions">Interessi & Passioni</h2>
+                <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-7 gap-6 md:gap-10">
+                    <!-- Musica -->
+                    <div class="text-center group hover:scale-105 transition-transform duration-300">
+                        <div
+                            class="w-16 h-16 bg-surface-container-high rounded-2xl flex items-center justify-center mx-auto mb-4 group-hover:bg-primary group-hover:text-on-primary transition-all duration-300 shadow-sm group-hover:shadow-lg">
+                            <span class="material-symbols-outlined text-3xl">music_note</span>
+                        </div>
+                        <p class="font-bold text-on-surface text-sm mb-1" data-it="Musica" data-en="Music">Musica</p>
+                        <p class="text-[10px] text-on-surface-variant leading-tight" data-it="Singer Songwriter"
+                            data-en="Singer Songwriter">Singer Songwriter</p>
                     </div>
-                    <p class="font-bold text-on-surface text-sm mb-1" data-it="Musica" data-en="Music">Musica</p>
-                    <p class="text-[10px] text-on-surface-variant leading-tight" data-it="Singer Songwriter" data-en="Singer Songwriter">Singer Songwriter</p>
-                </div>
-                <!-- Music Management -->
-                <div class="text-center group hover:scale-105 transition-transform duration-300">
-                    <div class="w-16 h-16 bg-surface-container-high rounded-2xl flex items-center justify-center mx-auto mb-4 group-hover:bg-primary group-hover:text-on-primary transition-all duration-300 shadow-sm group-hover:shadow-lg">
-                        <span class="material-symbols-outlined text-3xl">album</span>
+                    <!-- Music Management -->
+                    <div class="text-center group hover:scale-105 transition-transform duration-300">
+                        <div
+                            class="w-16 h-16 bg-surface-container-high rounded-2xl flex items-center justify-center mx-auto mb-4 group-hover:bg-primary group-hover:text-on-primary transition-all duration-300 shadow-sm group-hover:shadow-lg">
+                            <span class="material-symbols-outlined text-3xl">album</span>
+                        </div>
+                        <p class="font-bold text-on-surface text-sm mb-1" data-it="Management" data-en="Management">
+                            Management</p>
+                        <p class="text-[10px] text-on-surface-variant leading-tight">SpazioDischi</p>
                     </div>
-                    <p class="font-bold text-on-surface text-sm mb-1" data-it="Management" data-en="Management">Management</p>
-                    <p class="text-[10px] text-on-surface-variant leading-tight">SpazioDischi</p>
-                </div>
-                <!-- Viaggi -->
-                <div class="text-center group hover:scale-105 transition-transform duration-300">
-                    <div class="w-16 h-16 bg-surface-container-high rounded-2xl flex items-center justify-center mx-auto mb-4 group-hover:bg-primary group-hover:text-on-primary transition-all duration-300 shadow-sm group-hover:shadow-lg">
-                        <span class="material-symbols-outlined text-3xl">flight_takeoff</span>
+                    <!-- Viaggi -->
+                    <div class="text-center group hover:scale-105 transition-transform duration-300">
+                        <div
+                            class="w-16 h-16 bg-surface-container-high rounded-2xl flex items-center justify-center mx-auto mb-4 group-hover:bg-primary group-hover:text-on-primary transition-all duration-300 shadow-sm group-hover:shadow-lg">
+                            <span class="material-symbols-outlined text-3xl">flight_takeoff</span>
+                        </div>
+                        <p class="font-bold text-on-surface text-sm mb-1" data-it="Viaggi" data-en="Travel">Viaggi</p>
+                        <p class="text-[10px] text-on-surface-variant leading-tight" data-it="Esplorazione"
+                            data-en="Exploration">Esplorazione</p>
                     </div>
-                    <p class="font-bold text-on-surface text-sm mb-1" data-it="Viaggi" data-en="Travel">Viaggi</p>
-                    <p class="text-[10px] text-on-surface-variant leading-tight" data-it="Esplorazione" data-en="Exploration">Esplorazione</p>
-                </div>
-                <!-- Lettura -->
-                <div class="text-center group hover:scale-105 transition-transform duration-300">
-                    <div class="w-16 h-16 bg-surface-container-high rounded-2xl flex items-center justify-center mx-auto mb-4 group-hover:bg-primary group-hover:text-on-primary transition-all duration-300 shadow-sm group-hover:shadow-lg">
-                        <span class="material-symbols-outlined text-3xl">menu_book</span>
+                    <!-- Lettura -->
+                    <div class="text-center group hover:scale-105 transition-transform duration-300">
+                        <div
+                            class="w-16 h-16 bg-surface-container-high rounded-2xl flex items-center justify-center mx-auto mb-4 group-hover:bg-primary group-hover:text-on-primary transition-all duration-300 shadow-sm group-hover:shadow-lg">
+                            <span class="material-symbols-outlined text-3xl">menu_book</span>
+                        </div>
+                        <p class="font-bold text-on-surface text-sm mb-1" data-it="Lettura" data-en="Reading">Lettura
+                        </p>
+                        <p class="text-[10px] text-on-surface-variant leading-tight" data-it="Saggi & Romanzi"
+                            data-en="Essays & Novels">Saggi & Romanzi</p>
                     </div>
-                    <p class="font-bold text-on-surface text-sm mb-1" data-it="Lettura" data-en="Reading">Lettura</p>
-                    <p class="text-[10px] text-on-surface-variant leading-tight" data-it="Saggi & Romanzi" data-en="Essays & Novels">Saggi & Romanzi</p>
-                </div>
-                <!-- Fotografia -->
-                <div class="text-center group hover:scale-105 transition-transform duration-300">
-                    <div class="w-16 h-16 bg-surface-container-high rounded-2xl flex items-center justify-center mx-auto mb-4 group-hover:bg-primary group-hover:text-on-primary transition-all duration-300 shadow-sm group-hover:shadow-lg">
-                        <span class="material-symbols-outlined text-3xl">photo_camera</span>
+                    <!-- Fotografia -->
+                    <div class="text-center group hover:scale-105 transition-transform duration-300">
+                        <div
+                            class="w-16 h-16 bg-surface-container-high rounded-2xl flex items-center justify-center mx-auto mb-4 group-hover:bg-primary group-hover:text-on-primary transition-all duration-300 shadow-sm group-hover:shadow-lg">
+                            <span class="material-symbols-outlined text-3xl">photo_camera</span>
+                        </div>
+                        <p class="font-bold text-on-surface text-sm mb-1" data-it="Fotografia" data-en="Photography">
+                            Fotografia</p>
+                        <p class="text-[10px] text-on-surface-variant leading-tight" data-it="Visual Arts"
+                            data-en="Visual Arts">Visual Arts</p>
                     </div>
-                    <p class="font-bold text-on-surface text-sm mb-1" data-it="Fotografia" data-en="Photography">Fotografia</p>
-                    <p class="text-[10px] text-on-surface-variant leading-tight" data-it="Visual Arts" data-en="Visual Arts">Visual Arts</p>
-                </div>
-                <!-- Agricoltura -->
-                <div class="text-center group hover:scale-105 transition-transform duration-300">
-                    <div class="w-16 h-16 bg-surface-container-high rounded-2xl flex items-center justify-center mx-auto mb-4 group-hover:bg-primary group-hover:text-on-primary transition-all duration-300 shadow-sm group-hover:shadow-lg">
-                        <span class="material-symbols-outlined text-3xl">psychology</span>
+                    <!-- Agricoltura -->
+                    <div class="text-center group hover:scale-105 transition-transform duration-300">
+                        <div
+                            class="w-16 h-16 bg-surface-container-high rounded-2xl flex items-center justify-center mx-auto mb-4 group-hover:bg-primary group-hover:text-on-primary transition-all duration-300 shadow-sm group-hover:shadow-lg">
+                            <span class="material-symbols-outlined text-3xl">psychology</span>
+                        </div>
+                        <p class="font-bold text-on-surface text-sm mb-1" data-it="Agricoltura" data-en="Agri-Social">
+                            Agricoltura</p>
+                        <p class="text-[10px] text-on-surface-variant leading-tight" data-it="Orto Sociale"
+                            data-en="Social Garden">Orto Sociale</p>
                     </div>
-                    <p class="font-bold text-on-surface text-sm mb-1" data-it="Agricoltura" data-en="Agri-Social">Agricoltura</p>
-                    <p class="text-[10px] text-on-surface-variant leading-tight" data-it="Orto Sociale" data-en="Social Garden">Orto Sociale</p>
-                </div>
-                <!-- Pesca -->
-                <div class="text-center group hover:scale-105 transition-transform duration-300">
-                    <div class="w-16 h-16 bg-surface-container-high rounded-2xl flex items-center justify-center mx-auto mb-4 group-hover:bg-primary group-hover:text-on-primary transition-all duration-300 shadow-sm group-hover:shadow-lg">
-                        <span class="material-symbols-outlined text-3xl">phishing</span>
+                    <!-- Pesca -->
+                    <div class="text-center group hover:scale-105 transition-transform duration-300">
+                        <div
+                            class="w-16 h-16 bg-surface-container-high rounded-2xl flex items-center justify-center mx-auto mb-4 group-hover:bg-primary group-hover:text-on-primary transition-all duration-300 shadow-sm group-hover:shadow-lg">
+                            <span class="material-symbols-outlined text-3xl">phishing</span>
+                        </div>
+                        <p class="font-bold text-on-surface text-sm mb-1" data-it="Pesca" data-en="Fishing">Pesca</p>
+                        <p class="text-[10px] text-on-surface-variant leading-tight" data-it="Natura" data-en="Nature">
+                            Natura</p>
                     </div>
-                    <p class="font-bold text-on-surface text-sm mb-1" data-it="Pesca" data-en="Fishing">Pesca</p>
-                    <p class="text-[10px] text-on-surface-variant leading-tight" data-it="Natura" data-en="Nature">Natura</p>
                 </div>
             </div>
+        </section>
+
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-[#f0f4f7] dark:bg-slate-950 w-full py-12">
+        <div class="flex flex-col md:flex-row justify-between items-center px-12 max-w-7xl mx-auto gap-6">
+            <p class="font-['Inter'] text-xs uppercase tracking-widest text-[#566166]"
+                data-it="© 2026 Luigi Lafiandra. Tutti i diritti riservati."
+                data-en="© 2026 Luigi Lafiandra. All rights reserved.">
+                © 2026 Luigi Lafiandra. Tutti i diritti riservati.
+            </p>
+            <div class="flex gap-8 font-['Inter'] text-xs uppercase tracking-widest">
+                <a class="text-[#566166] opacity-80 hover:opacity-100 hover:text-[#4059aa] underline underline-offset-4 transition-opacity"
+                    href="https://www.linkedin.com/in/luigi-lafiandra-87098b233/" target="_blank">LinkedIn</a>
+                <a class="text-[#566166] opacity-80 hover:opacity-100 hover:text-[#4059aa] underline underline-offset-4 transition-opacity"
+                    href="mailto:luigi.lafiandra@hotmail.com">Email</a>
+            </div>
         </div>
-    </section>
+    </footer>
 
-
-</main>
-
-<!-- Footer -->
-<footer class="bg-[#f0f4f7] dark:bg-slate-950 w-full py-12">
-    <div class="flex flex-col md:flex-row justify-between items-center px-12 max-w-7xl mx-auto gap-6">
-        <p class="font-['Inter'] text-xs uppercase tracking-widest text-[#566166]" data-it="© 2026 Luigi Lafiandra. Tutti i diritti riservati." data-en="© 2026 Luigi Lafiandra. All rights reserved.">
-            © 2026 Luigi Lafiandra. Tutti i diritti riservati.
-        </p>
-        <div class="flex gap-8 font-['Inter'] text-xs uppercase tracking-widest">
-            <a class="text-[#566166] opacity-80 hover:opacity-100 hover:text-[#4059aa] underline underline-offset-4 transition-opacity" href="https://www.linkedin.com/in/luigi-lafiandra-87098b233/" target="_blank">LinkedIn</a>
-            <a class="text-[#566166] opacity-80 hover:opacity-100 hover:text-[#4059aa] underline underline-offset-4 transition-opacity" href="mailto:luigi.lafiandra@hotmail.com">Email</a>
-        </div>
-    </div>
-</footer>
-
-<script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
+
 </html>
